@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net6.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<UseWPF>true</UseWPF>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Remove="Images\logo.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Resource Include="Images\logo.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Noter.Common\Noter.Common.csproj" />
+		<ProjectReference Include="..\Noter.DataAccess\Noter.DataAccess.csproj" />
+		<ProjectReference Include="..\Noter.ViewModel\Noter.ViewModel.csproj" />
+	</ItemGroup>
+
+</Project>
